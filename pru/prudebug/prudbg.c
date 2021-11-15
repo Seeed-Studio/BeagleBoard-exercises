@@ -141,6 +141,44 @@ struct pdb_tag {
 			}
 		}
 	},
+	{
+		.processor      = "J721E-pru0",
+		.short_name     = "J721E-pru0",
+		.pruss_address  = 0xb000000,
+		.pruss_len      = 0x80000,
+		.num_of_pruss   = 2,
+		.offsets        = {
+			{
+				.pruss_inst     = 0x34000,
+				.pruss_data     = 0x00000,
+				.pruss_ctrl     = 0x22000
+			},
+			{
+				.pruss_inst     = 0x38000,
+				.pruss_data     = 0x02000,
+				.pruss_ctrl     = 0x24000
+			}
+		}
+	},
+	{
+		.processor      = "J721E-pru1",
+		.short_name     = "J721E-pru1",
+		.pruss_address  = 0xb100000,
+		.pruss_len      = 0x80000,
+		.num_of_pruss   = 2,
+		.offsets        = {
+			{
+				.pruss_inst     = 0x34000,
+				.pruss_data     = 0x00000,
+				.pruss_ctrl     = 0x22000
+			},
+			{
+				.pruss_inst     = 0x38000,
+				.pruss_data     = 0x02000,
+				.pruss_ctrl     = 0x24000
+			}
+		}
+	},
 	{	// end marker
 		.processor	= "NONE",
 		.short_name	= "NONE",
